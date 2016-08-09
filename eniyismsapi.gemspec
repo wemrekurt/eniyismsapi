@@ -8,11 +8,11 @@ Gem::Specification.new do |s|
   s.name        = "eniyismsapi"
   s.version     = Eniyismsapi::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["wemrekurt"]
+  s.author      = "Emre KURT"
   s.email       = ["emre.kurt@bil.omu.edu.tr"]
-  s.homepage    = "TODO"
+  s.description = "eniyisms.com api toplu sms rapor ve gonderim işlemleri icin hazirlanmistir"
+  s.homepage    = "https://github.com/wemrekurt/eniyismsapi"
   s.summary     = "http://eniyisms.com/Api Eniyismsapi Ruby Gem."
-  s.description = "https://github.com/wemrekurt/eniyismsapi"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
