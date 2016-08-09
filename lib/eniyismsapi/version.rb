@@ -1,3 +1,3 @@
 module Eniyismsapi
-  VERSION = "0.1.3"
+  VERSION = "1.0.3"
 end

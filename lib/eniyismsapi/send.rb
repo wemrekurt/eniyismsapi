@@ -51,14 +51,16 @@ module Eniyismsapi
       # return build_xml.to_xml
     end
 
-    # Usage: sms = IletimerkeziSMS::SMS.new("5545967632","5173539")
-    #        sms.send({sender: "ILETI MRKZI",
-    #                   messages: [
-    #                     {text: "Message_one", numbers: ["905xxxxxxxxx"," +90 5xx xxx xx xx", "5xxxxxxxxx"]},
-    #                     {text: "Message_two", numbers: ["905xxxxxxxxx"," +90 5xx xxx xx xx"]},
-    #                     {text: "Message_there", numbers: ["905xxxxxxxxx"]}
-    #                   ]
-    #                 })
+    # multi = Eniyismsapi::SMS.new '544xxxxxxx', '123456' #First: Username, Second: Password
+    #  params = {
+    #    coding: 'Default', # Can be Turkish, Default, UCS2
+    #    originator: 'EMRE KURT',
+    #    messages: [
+    #      {number: '544xxxxxxx', message: 'Emre Ruby GEM Api Test'},
+    #      {number: '542xxxxxxx', message: 'Samet Ruby GEM Api Test'}
+    #    ]
+    #  }
+    #  @response = multi.multi_send params
     # Description: Multi Message => Multi Number (Birden fazla farklı mesajı birden fazla farklı kişiye göndermeye yarar.)
 
      def multi_send params
@@ -94,27 +96,6 @@ module Eniyismsapi
       r = REQUEST.new path, multi_xml.to_xml
       return r.request
     end
-
-    # Usage: sms = IletimerkeziSMS::SMS.new("5545967632","5173539")
-    #        sms.cancel("4152")
-    # Description: Gönderilen sms paketini iptal etmeye yarar.
-    # def cancel(order_id)
-    #   path = "cancel-order"
-    #   xml_build = Nokogiri::XML::Builder.new do |xlm|
-    #     xlm.request {
-    #       xlm.authentication {
-    #         xlm.username @username
-    #         xlm.password @password
-    #       }
-    #       xlm.order {
-    #         xlm.id_ order_id.to_s
-    #       }
-    #     }
-    #   end
-    #   r = REQUEST.new(path,xml_build.to_xml)
-    #   return r.request
-    # end
-
 
   end
 end
