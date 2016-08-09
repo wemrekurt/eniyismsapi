@@ -12,13 +12,16 @@ Gem::Specification.new do |s|
   s.email       = ["emre.kurt@bil.omu.edu.tr"]
   s.homepage    = "TODO"
   s.summary     = "http://eniyisms.com/Api Eniyismsapi Ruby Gem."
-  s.description = "TODO: Description of Eniyismsapi."
+  s.description = "https://github.com/wemrekurt/eniyismsapi"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.2.6"
+  s.add_dependency "nokogiri", "~>1.6.6" , ">=1.6.6.3"
+  s.add_dependency "rest-client","~>1.8", ">=1.8.0"
+  s.add_dependency "crack", "~> 0.4", ">=0.4.2"
 
-  s.add_development_dependency "sqlite3"
+  # s.add_dependency "rails", "~> 4.2.6"
+  # s.add_development_dependency "sqlite3"
 end
