@@ -10,5 +10,13 @@ class SmstestController < ApplicationController
     bal = Eniyismsapi::REPORT.new '5444059964', '123456'
     @b = bal.balance
 
+    sen = Eniyismsapi::SMS.new '5444059964', '123456'
+    params = {
+      coding: 'Default',
+      originator: 'EMRE KURT',
+      message: 'Ruby Gem Test API',
+      numbers: ['5444059964']
+    }
+    @send = sen.send params
   end
 end
