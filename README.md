@@ -56,4 +56,4 @@ $ gem install 'eniyismsapi'
 ```
 
 ## API Dökümanı
-Lütfen [eniyisms.com](https://docs.google.com/document/d/19mYfmnx_BAoO5tPjz2qrCE9LK9qNrafAVZTNqHmi1tQ/edit)'dan api dökümanı isteyip hesabınız için api kullanımının aktifleştirilmesini talep ediniz.
+Lütfen [eniyisms.com](http://www.eniyisms.com)'dan api dökümanı isteyip hesabınız için api kullanımının aktifleştirilmesini talep ediniz.
