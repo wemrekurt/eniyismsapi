@@ -20,6 +20,11 @@ test/dummy/.sass-cache
 /test/version_tmp/
 /tmp/
 
+Gemfile
+Gemfile.lock
+Rakefile
+/test
+
 # Used by dotenv library to load environment variables.
 # .env
 
