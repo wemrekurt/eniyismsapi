@@ -16,7 +16,7 @@ module Eniyismsapi
     # Description: Single Message to Multiple Recipients
     def send params
       path = "Submit"
-      params = {sendDateTime: Time.now.strftime("%d/%m/%Y %H:%M")}.merge(params)
+      # params = {sendDateTime: Time.now.strftime("%d/%m/%Y %H:%M")}.merge(params)
 
       ns = {
         "xmlns:i" => "http://www.w3.org/2001/XMLSchema-instance" ,
@@ -65,7 +65,7 @@ module Eniyismsapi
 
      def multi_send params
       path = "SubmitMulti"
-      params = {sendDateTime: Time.now.strftime("%d/%m/%Y %H:%M")}.merge(params)
+      # params = {sendDateTime: Time.now.strftime("%d/%m/%Y %H:%M")}.merge(params)
 
       ns = {
         "xmlns:i" => "http://www.w3.org/2001/XMLSchema-instance" ,

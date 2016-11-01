@@ -5,7 +5,7 @@ require 'nokogiri'
 
 module Eniyismsapi
   class REPORT
-    def initialize username, password
+    def initialize(username, password)
       @username = username
       @password = password
     end
